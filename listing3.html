@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Listing 3</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="images/logo.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <h2>
+                <a href="index.html">Home</a>
+                <a href="available.html">For Sale</a>
+                <a href="contact.html">Contact</a>
+                <a href="map.html">Site Map</a>
+            </h2>
+            <div class="row">
+                <img src="images/logo.png" alt="logo" id="logo">
+                <h1>Jonny Real Estate</h1>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article class="row">
+                <img src="images/house3.jpg" alt="house3" class="listing-image" width="50%">
+                <div class="listing-details">
+                    <h3>Luxurious Yellow Beauty</h3><br>
+                    <p><span>Price:</span> $4,500,000</p>
+                    <p><span>Address:</span> 88 Barker St, Toronto, ON</p>
+                    <p><span>MLS#:</span> 685412</p>
+                    <p><span>Lot Size:</span> 3,200 sqft</p>
+                    <p><span>Year Built:</span> 2021</p>
+                    <p><span>Bedrooms:</span> 6</p>
+                    <p><span>Bathrooms:</span> 4</p>
+                    <p><span>Garage:</span> 3</p>
+                    <p><span>Amenities:</span> Pool, Hot Tub</p>
+                    <p><span>Features:</span> Hardwood Floors, Granite Countertops</p>
+                </div>
+            </article>
+            <article>
+                <h2>Description</h2>
+                <p>
+                    The Luxurious Yellow Beauty is a stunning 6 bedroom, 4 bathroom home located in the heart of
+                    Toronto. This home features a large open concept kitchen with granite countertops and stainless
+                    steel appliances. The main floor also features a large living room with a fireplace and a dining
+                    room with a walkout to the backyard. The second floor features 4 bedrooms and 2 bathrooms.
+                    The master bedroom features a walk-in closet and a 5 piece ensuite. The basement features a large
+                    rec room, 2 bedrooms, and a 3 piece bathroom. The backyard features a large in-ground pool and a
+                    hot tub. This home is located close to schools, parks, and shopping.
+                </p>
+            </article>
+        </section>
+        <section>
+            <h2>Mortgage Calculator</h2>
+            <form id="mortgageCalculator">
+                <div class="row">
+                    <div>
+                        <label for="principal">Principal:</label>
+                        <input type="number" id="principal" name="principal" value="4500000" oninput="calculateMortgage()"><br>
+                        <label for="interest">Interest Rate:</label>
+                        <input type="number" id="interest" name="interest" value="4.99" oninput="calculateMortgage()"><br>
+                        <label for="years">Years:</label>
+                        <input type="number" id="years" name="years" value="25" oninput="calculateMortgage()"><br>
+                    </div>
+                    <div>
+                        <label for="downPayment">Down Payment:</label>
+                        <input type="number" id="downPayment" name="downPayment" value="900000" oninput="calculateMortgage()"><br>
+                        <label for="downPaymentPercent">Down Payment Percent:</label>
+                        <input type="number" id="downPaymentPercent" name="downPaymentPercent" value="20" oninput="calculateMortgage()"><br>
+                        <label for="paymentFrequency">Payment Frequency Per Year:</label>
+                        <input type="number" id="paymentFrequency" name="paymentFrequency" value="12" oninput="calculateMortgage()"><br>
+                    </div>
+                    <div class="align-top">
+                        <label for="payment">Payment:</label>
+                        <input type="number" id="payment" name="payment" readonly><br>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy2022 Chris Busse - 301252282</p>
+    </footer>
+    <script src="scripts/mortgageCalculator.js"></script>
+</body>
+</html>

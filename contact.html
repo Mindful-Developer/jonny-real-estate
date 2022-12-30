@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="images/logo.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <h2>
+                <a href="index.html">Home</a>
+                <a href="available.html">For Sale</a>
+                <a href="contact.html">Contact</a>
+                <a href="map.html">Site Map</a>
+            </h2>
+            <div class="row">
+                <img src="images/logo.png" alt="logo" id="logo">
+                <h1>Jonny Real Estate</h1>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="center-content">
+            <h2>Contact Us</h2>
+            <form action="thankyou.html" method="get">
+                <div class="row">
+                    <div class="col align-top">
+                        <label for="fname">First Name:</label><br>
+                        <input type="text" id="fname" name="fname" required><br>
+                        <label for="lname">Last Name:</label><br>
+                        <input type="text" id="lname" name="lname" required><br>
+                        <label for="phone">Phone:</label><br>
+                        <input type="tel" id="phone" name="phone" required><br>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" required><br>
+                        <label for="property">Type of Property:</label><br>
+                        <select id="property" name="property" required>
+                            <option value="house">House</option>
+                            <option value="condo">Condominium</option>
+                        </select>
+                    </div>
+                    <div class="col align-top">
+                        <label for="bedrooms">Number of Bedrooms:</label><br>
+                        <input type="number" id="bedrooms" name="bedrooms" min="1" max="10" required><br>
+                        <label for="bathrooms">Number of Bathrooms:</label><br>
+                        <input type="number" id="bathrooms" name="bathrooms" min="1" max="10" required><br>
+                        <label for="price">Price Range:</label><br>
+                        <input type="text" id="price" name="price" min="100000" max="10000000" required><br>
+                        <label for="comments">Additional Comments:</label><br>
+                        <textarea id="comments" name="comments" rows="10" cols="50"></textarea><br>
+
+                    </div>
+                </div>
+                <input type="submit" value="Submit" id="submit">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy2022 Chris Busse - 301252282</p>
+    </footer>
+    <script src="scripts/contact.js"></script>
+</body>
+</html>
